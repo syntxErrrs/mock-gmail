@@ -2,6 +2,7 @@ import EmailHeaderRow from "./EmailHeaderRow";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import FocusEmailRow from "./FocusEmailRow";
+import ComposeForm from "./ComposeForm";
 
 const EmailHeaderRows = (props) => {
     const [emails, setEmails] = useState();
@@ -10,7 +11,6 @@ const EmailHeaderRows = (props) => {
         const getResponse = async () => {
             const response = await axios.get('http://localhost:3001/emails');
             setEmails(response.data);
-            console.log(response.data);
         }
         getResponse().then(() => {});
     }, [])
@@ -19,12 +19,19 @@ const EmailHeaderRows = (props) => {
         emails?.map((email, index) => <EmailHeaderRow key={index} email={email} setFocusEmail={props.setFocusEmail}/>) :
         <></>;
 
-    return (
+    return props.compose ? (
+        <div className="ComposeMessageContainer"><ComposeForm /></div>
+    ) : (
         <div className="EmailHeaderContainer">
             {
                 !!props.focusEmail ?
                     (<FocusEmailRow email={props.focusEmail} setFocusEmail={props.setFocusEmail} />) :
-                    emailHeaderRows
+                    (
+                        <>
+                            <button id="composeEmail" className="ComposeButton" onClick={() => props.setCompose(true)}>Compose</button>
+                            {emailHeaderRows}
+                        </>
+                    )
             }
         </div>
     );
