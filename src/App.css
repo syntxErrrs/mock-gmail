@@ -22,10 +22,37 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 100px;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.EmailHeaderContainer {
+  padding: 60px 0px;
+  width: 95%;
+  background: deeppink;
+  display: flex;
+  flex-direction: column;
+}
+
+.EmailHeaderRow {
+  color: aqua;
+  padding: 10px 100px;
+  margin: 10px;
+  width: 90%;
+}
+
+.EmailHeaderRowContainer {
+  align-self: center;
+  border: 3px white solid;
+  margin: 3px 0;
+  justify-content: space-between;
+  display: flex;
+  padding: 0px;
+  background: orangered;
+  width: 90%;
 }
 
 @keyframes App-logo-spin {

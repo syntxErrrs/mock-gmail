@@ -1,3 +1,17 @@
+# Mandatory Content
+
+View all of my email messages (subject line + sender)
+View one of my email messages with all of its details
+Send an email
+Search for a specific email by subject
+
+# Back End Service Setup
+
+To install the back end service and dependencies, run npm install in the root of the project directory
+To start the server, run npm run start
+The server will be available at http://localhost:3001
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
