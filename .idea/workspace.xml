@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c4a2a66-f16b-4946-b01f-4c2845602e49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/ComposeForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/EmailHeaderRows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/EmailHeaderRows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FocusEmailRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FocusEmailRow.js" afterDir="false" />
     </list>
-    <list id="cc13e719-421b-4f31-b8cb-79f14dcbf778" name="Changes by j2186580" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FocusEmailRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FocusEmailRow.js" afterDir="false" />
-    </list>
+    <list id="cc13e719-421b-4f31-b8cb-79f14dcbf778" name="Changes by j2186580" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +29,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/App.js">
-      <ranges>
-        <range start1="6" end1="6" start2="6" end2="7" changelist="5c4a2a66-f16b-4946-b01f-4c2845602e49" />
-        <range start1="10" end1="11" start2="11" end2="17" changelist="5c4a2a66-f16b-4946-b01f-4c2845602e49" />
-        <range start1="17" end1="18" start2="23" end2="23" changelist="cc13e719-421b-4f31-b8cb-79f14dcbf778" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/Components/FocusEmailRow.js">
-      <ranges>
-        <range start1="2" end1="8" start2="2" end2="11" changelist="5c4a2a66-f16b-4946-b01f-4c2845602e49" />
-        <range start1="10" end1="11" start2="13" end2="13" changelist="cc13e719-421b-4f31-b8cb-79f14dcbf778" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectId" id="1zp1qKOCH9lgVN31uefhnhbuYdc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634830407395</updated>
-      <workItem from="1634830413446" duration="17326000" />
+      <workItem from="1634830413446" duration="19338000" />
     </task>
     <servers />
   </component>
