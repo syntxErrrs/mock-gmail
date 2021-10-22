@@ -6,7 +6,6 @@ import ComposeForm from "./ComposeForm";
 
 const EmailHeaderRows = (props) => {
     const [emails, setEmails] = useState();
-    //TODO
     const [filteredEmails, setFilteredEmails] = useState();
     const [value, setValue] = useState('');
 
@@ -14,18 +13,19 @@ const EmailHeaderRows = (props) => {
         const getResponse = async () => {
             const response = await axios.get('http://localhost:3001/emails');
             setEmails(response.data);
+            setFilteredEmails(response.data);
         }
         getResponse().then(() => {
         });
     }, [])
 
-    const emailHeaderRows = !!emails ?
-        emails?.map((email, index) => <EmailHeaderRow key={index} email={email} setFocusEmail={props.setFocusEmail}/>) :
+    const emailHeaderRows = !!filteredEmails ?
+        filteredEmails?.map((email, index) => <EmailHeaderRow key={index} email={email} setFocusEmail={props.setFocusEmail}/>) :
         <></>;
 
-    const searchForFocusEmail = () => {
-        const newEmails = emails?.filter(email => email.subject.startsWith(value));
-        setEmails(newEmails);
+    const searchForFocusEmail = (targetValue) => {
+        const newEmails = emails?.filter(email => email.subject.startsWith(targetValue));
+        setFilteredEmails(newEmails);
     }
 
     return props.compose ? (
@@ -49,7 +49,7 @@ const EmailHeaderRows = (props) => {
                                     value={value}
                                     onChange={(e) => {
                                         setValue(e.target.value);
-                                        searchForFocusEmail(value);
+                                        searchForFocusEmail(e.target.value);
                                     }}
                                 />
                             </label>
